@@ -6,6 +6,17 @@ const LoadingScreen = ({ onComplete }) => {
   const fullText = "Welcome to My Portfolio";
 
   useEffect(() => {
+    // Disable scroll
+    document.body.classList.add("no-scroll");
+  
+    return () => {
+      // Enable scroll when loading screen unmounts
+      document.body.classList.remove("no-scroll");
+    };
+  }, []);
+  
+
+  useEffect(() => {
     let index = 0;
     const interval = setInterval(() => {
       setText(fullText.substring(0, index));
