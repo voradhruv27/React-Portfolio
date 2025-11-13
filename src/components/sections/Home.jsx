@@ -6,7 +6,7 @@ const Home = () => {
     e.preventDefault();
 
     const resumeUrl =
-      "https://drive.google.com/file/d/1iN2X56LhsdPB1mfZdgcmHWQGBA9M4ifG/view?usp=drive_link";
+      "https://drive.google.com/file/d/1iN2X56LhsdPB1mfZdgcmHWQGBA9M4ifG/view?usp=sharing";
 
     window.open(
       resumeUrl,

@@ -9,6 +9,7 @@ import Project from "./components/sections/Project";
 import Contact from "./components/sections/Contact";
 import Eduction from "./components/sections/Eduction";
 import Skils from "./components/sections/Skils";
+import Footer from "./components/Footer";
 
 function App() {
   const [isLoading, setIsLoading] = useState(false);
@@ -32,6 +33,7 @@ function App() {
         <Eduction />
         {/* Add Project's component hear */}
         <Contact />
+        <Footer />
       </div>
     </>
   );
