@@ -1,8 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 
 const Navbar = ({ menuOpen, setMenuOpen }) => {
+  // const [active, setActive] = useState(false);
+
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
     return () => {
@@ -15,7 +17,7 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
     { href: "#about", label: "About" },
     { href: "#skills", label: "Skills" },
     { href: "#education", label: "Education" },
-    // { href: "#project", label: "Project" }, 
+    // { href: "#project", label: "Project" },
     { href: "#contact", label: "Contact" },
   ];
 
@@ -24,12 +26,40 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <a
-            href ="#home"
-            className="font-mono text-2xl font-bold text-white tracking-wide"
+          {/* <a
+            href="#home"
+            onMouseEnter={() => setActive(true)}
+            onMouseLeave={() => setActive(false)}
+            className={`font-mono text-2xl font-bold tracking-wide border-2 rounded-md p-1 transition text-white ${
+              active ? "border-blue-500" : "border-gray-300"
+            }`}
           >
-            Dhruv<span className="text-blue-500">Vora</span>
-          </a>
+            <span
+              className={`border-2 rounded-sm p-0.5 transition ${
+                active ? "border-gray-300" : "border-blue-500"
+              }`}
+            >
+              Dhruv<span className="text-blue-500">Vora</span>
+            </span>
+          </a> */}
+          <motion.a
+            href="#home"
+            className="inline-block rounded-md p-[2px]"
+            // initial={{ opacity: 0 }}
+            animate={{ opacity: [0.7, 1, 0.7] }}
+            transition={{
+              duration: 1.5,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+            style={{
+              background: "linear-gradient(90deg, #3b82f6, #9ca3af)",
+            }}
+          >
+            <div className="bg-black rounded-md px-3 py-1 font-mono text-2xl font-bold tracking-wide text-white">
+              Dhruv<span className="text-blue-500">Vora</span>
+            </div>
+          </motion.a>
 
           {/* Desktop Links */}
           <div className="hidden md:flex items-center space-x-8">
