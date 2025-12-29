@@ -1,5 +1,5 @@
 import RevealOnScroll from "../RevealOnScroll";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import SocialLink from "../SocialLink";
 
 const Home = () => {
   const handleResumeClick = (e) => {
@@ -30,7 +30,7 @@ const Home = () => {
         <div className="text-center z-10 max-w-3xl">
           {/* Profile Image */}
           <div className="flex items-center justify-center mb-5 mt-15">
-            <div className="h-[180px] w-[180px] md:h-[220px] md:w-[220px] rounded-full overflow-hidden border-4 border-blue-500/40 shadow-xl hover:scale-105 transition duration-300">
+            <div className="h-[180px] w-[180px] md:h-[220px] md:w-[220px] rounded-full overflow-hidden border-4 border-blue-500/40 shadow-xl hover:scale-105 hover:border-blue-400 transition duration-300">
               <img
                 className="h-full w-full object-cover block top-2"
                 src="/ProfilePichture.png"
@@ -69,32 +69,7 @@ const Home = () => {
               ✉️ Contact Me
             </a>
           </div>
-
-          {/* Social Links */}
-          <div className="flex justify-center gap-6 text-gray-400 text-2xl">
-            <a
-              href="https://github.com/voradhruv27"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-white hover:scale-110 transition"
-            >
-              <FaGithub />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/voradhruv27"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-blue-400 hover:scale-110 transition"
-            >
-              <FaLinkedin />
-            </a>
-            <a
-              href="mailto:voradhruv09@gmail.com"
-              className="hover:text-red-400 hover:scale-110 transition"
-            >
-              <FaEnvelope />
-            </a>
-          </div>
+          <SocialLink />
         </div>
       </RevealOnScroll>
     </section>

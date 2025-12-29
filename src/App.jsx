@@ -5,7 +5,7 @@ import LoadingScreen from "./components/LoadingScreen";
 import Navbar from "./components/Navbar";
 import Home from "./components/sections/Home";
 import About from "./components/sections/About";
-import Project from "./components/sections/Project";
+// import Project from "./components/sections/Project";
 import Contact from "./components/sections/Contact";
 import Eduction from "./components/sections/Eduction";
 import Skils from "./components/sections/Skils";
@@ -28,10 +28,10 @@ function App() {
 
         {/* Sections */}
         <Home />
-        <About />
         <Skils />
         <Eduction />
         {/* Add Project's component hear */}
+        <About />
         <Contact />
         <Footer />
       </div>

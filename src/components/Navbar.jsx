@@ -14,10 +14,10 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
 
   const links = [
     { href: "#home", label: "Home" },
-    { href: "#about", label: "About" },
     { href: "#skills", label: "Skills" },
     { href: "#education", label: "Education" },
     // { href: "#project", label: "Project" },
+    { href: "#about", label: "About" },
     { href: "#contact", label: "Contact" },
   ];
 
@@ -45,10 +45,10 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
           <motion.a
             href="#home"
             className="inline-block rounded-md p-[2px]"
-            // initial={{ opacity: 0 }}
-            animate={{ opacity: [0.7, 1, 0.7] }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: [0.8, 1, 0.8], scale: [1, 1.01, 1] }}
             transition={{
-              duration: 1.5,
+              duration: 2.5,
               repeat: Infinity,
               ease: "easeInOut",
             }}
