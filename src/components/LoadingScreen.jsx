@@ -55,10 +55,12 @@ const LoadingScreen = ({ onComplete }) => {
         {/* Animated Loading Bar */}
         <div className="relative w-40 sm:w-56 md:w-72 h-2 bg-gray-800 rounded overflow-hidden shadow-inner">
           <motion.div
-            className="absolute top-0 left-0 h-full bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-500 shadow-[0_0_20px_#3b82f6]"
+            className="absolute top-0 left-0 h-full w-full
+             bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-500
+             shadow-[0_0_20px_#3b82f6]"
             initial={{ x: "-100%" }}
             animate={{ x: "100%" }}
-            transition={{ repeat: Infinity, duration: 1.5, ease: "linear" }}
+            transition={{ duration: 7.1, ease: "linear" }}
           />
         </div>
 

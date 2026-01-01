@@ -30,7 +30,7 @@ const Home = () => {
         <div className="text-center z-10 max-w-3xl">
           {/* Profile Image */}
           <div className="flex items-center justify-center mb-5 mt-15">
-            <div className="h-[180px] w-[180px] md:h-[220px] md:w-[220px] rounded-full overflow-hidden border-4 border-blue-500/40 shadow-xl hover:scale-105 hover:border-blue-400 transition duration-300">
+            <div className="h-[180px] w-[180px] md:h-[220px] md:w-[220px] rounded-full overflow-hidden border-4 border-blue-500/40 shadow-xl hover:scale-105 hover:border-blue-500/80 transition duration-300">
               <img
                 className="h-full w-full object-cover block top-2"
                 src="/ProfilePichture.png"

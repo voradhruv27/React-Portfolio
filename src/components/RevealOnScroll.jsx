@@ -21,15 +21,22 @@ const RevealOnScroll = ({ children, direction = "up", delay = 0 }) => {
     hidden: {
       opacity: 0,
       y: direction === "up" ? 40 : direction === "down" ? -40 : 0,
-      x: direction === "left" ? 40 : direction === "right" ? -40 : 0,
-      scale: direction === "scale" ? 0.8 : 1,
+      scale: 0.95,
     },
     visible: {
       opacity: 1,
       y: 0,
-      x: 0,
       scale: 1,
-      transition: { duration: 0.7, ease: "easeOut", delay },
+      transition: {
+        opacity: { duration: 0.7, ease: "easeOut", delay },
+        y: { duration: 0.7, ease: "easeOut", delay },
+        scale: {
+          type: "spring",
+          stiffness: 350,
+          damping: 20,
+          delay,
+        },
+      },
     },
   };
 
