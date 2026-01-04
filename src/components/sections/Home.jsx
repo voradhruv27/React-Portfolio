@@ -1,5 +1,6 @@
 import RevealOnScroll from "../RevealOnScroll";
 import SocialLink from "../SocialLink";
+// import ProfilePichture from "../../assets/ProfilePichture.png";
 
 const Home = () => {
   const handleResumeClick = (e) => {
@@ -33,7 +34,8 @@ const Home = () => {
             <div className="h-[180px] w-[180px] md:h-[220px] md:w-[220px] rounded-full overflow-hidden border-4 border-blue-500/40 shadow-xl hover:scale-105 hover:border-blue-500/80 transition duration-300">
               <img
                 className="h-full w-full object-cover block top-2"
-                src="/ProfilePichture.png"
+                // src={ProfilePichture}
+                src={`${import.meta.env.BASE_URL}/ProfilePichture.png`}
                 alt="Dhruv vora"
               />
             </div>
@@ -49,7 +51,9 @@ const Home = () => {
             A passionate{" "}
             <span className="text-blue-400">Front-End Developer </span>
             who loves building clean, scalable, and user-friendly web
-            applications. I love turning ideas into interactive digital experiences using modern technologies like React.js, JavaScript, and Tailwind CSS.
+            applications. I love turning ideas into interactive digital
+            experiences using modern technologies like React.js, JavaScript, and
+            Tailwind CSS.
           </p>
 
           {/* Buttons */}
