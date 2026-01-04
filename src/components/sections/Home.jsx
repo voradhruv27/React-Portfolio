@@ -35,7 +35,7 @@ const Home = () => {
               <img
                 className="h-full w-full object-cover block top-2"
                 // src={ProfilePichture}
-                src={`${import.meta.env.BASE_URL}/ProfilePichture.png`}
+                src={`${import.meta.env.BASE_URL}ProfilePichture.png`}
                 alt="Dhruv vora"
               />
             </div>
