@@ -16,6 +16,8 @@ import {
   SiVercel,
   SiReactrouter,
   SiVite,
+  SiNextdotjs,
+  SiTypescript,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
@@ -29,7 +31,12 @@ const Skills = () => {
       name: "React Router",
       icon: <SiReactrouter className="text-purple-500" />,
     },
-    { name: "Tailwind CSS", icon: <SiTailwindcss className="text-sky-400" /> }
+    { name: "Tailwind CSS", icon: <SiTailwindcss className="text-sky-400" /> },
+    { name: "TypeScript", icon: <SiTypescript className="text-blue-500" /> },
+    {
+      name: "Next.js",
+      icon: <SiNextdotjs className="text-white bg-black rounded-full" />,
+    },
   ];
 
   const tools = [
@@ -42,7 +49,7 @@ const Skills = () => {
       icon: <VscVscode className="text-[oklch(0.55_0.13_243.48)]" />,
     },
     { name: "Vercel", icon: <SiVercel className="text-black" /> },
-    { name: "Vite", icon: <SiVite className="text-purple-400" /> }
+    { name: "Vite", icon: <SiVite className="text-purple-400" /> },
   ];
 
   const renderSkill = (skill, i) => (

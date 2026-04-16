@@ -15,6 +15,7 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
   const links = [
     { href: "#home", label: "Home" },
     { href: "#skills", label: "Skills" },
+    { href: "#experience", label: "Experience" },
     { href: "#education", label: "Education" },
     // { href: "#project", label: "Project" },
     { href: "#about", label: "About" },

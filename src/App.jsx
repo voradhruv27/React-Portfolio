@@ -9,6 +9,7 @@ import About from "./components/sections/About";
 import Contact from "./components/sections/Contact";
 import Eduction from "./components/sections/Eduction";
 import Skils from "./components/sections/Skils";
+import Experience from "./components/sections/Experience";
 import Footer from "./components/Footer";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         {/* Sections */}
         <Home />
         <Skils />
+        <Experience />
         <Eduction />
         {/* Add Project's component hear */}
         <About />

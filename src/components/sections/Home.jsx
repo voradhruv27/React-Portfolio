@@ -1,18 +1,15 @@
 import RevealOnScroll from "../RevealOnScroll";
 import SocialLink from "../SocialLink";
-// import ProfilePichture from "../../assets/ProfilePichture.png";
+import ProfilePichture from "../../assets/ProfilePichture.png";
 
 const Home = () => {
   const handleResumeClick = (e) => {
     e.preventDefault();
 
     const resumeUrl =
-      "https://drive.google.com/file/d/1iN2X56LhsdPB1mfZdgcmHWQGBA9M4ifG/view?usp=sharing";
+      "https://drive.google.com/file/d/1GAPdsyk2h5KCoQU4AxDwJFBxpF-J6Yoj/view?usp=sharing";
 
-    window.open(
-      resumeUrl,
-      "_blank"
-    );
+    window.open(resumeUrl, "_blank");
 
     // const link = document.createElement("a");
     // link.href = resumeUrl;
@@ -34,8 +31,7 @@ const Home = () => {
             <div className="h-[180px] w-[180px] md:h-[220px] md:w-[220px] rounded-full overflow-hidden border-4 border-blue-500/40 shadow-xl hover:scale-105 hover:border-blue-500/80 transition duration-300">
               <img
                 className="h-full w-full object-cover block top-2"
-                // src={ProfilePichture}
-                src={`${import.meta.env.BASE_URL}ProfilePichture.png`}
+                src={ProfilePichture}
                 alt="Dhruv vora"
               />
             </div>

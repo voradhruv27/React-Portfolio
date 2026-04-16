@@ -28,9 +28,12 @@ const About = () => {
                   <span className="text-cyan-400 font-medium">
                     Front-End Web Developer
                   </span>
-                  . I specialize in building modern, scalable, and user-friendly
-                  applications using the{" "}
-                  <span className="text-green-400">React</span>. combining clean design principles with efficient coding practices to create seamless digital experiences. With a strong academic background in Computer Science and a deep curiosity for learning new technologies, I enjoy solving real-world problems through code and developing impactful, technology-driven solutions that make a difference.
+                  . I specialize in building scalable, user-friendly applications using{" "}
+                  <span className="text-green-400 font-medium">React.js</span> and{" "}
+                  <span className="text-white font-medium bg-black px-1 rounded-sm">Next.js</span>. 
+                  My professional journey kicked off at Strica with a focused dive into crafting flawless, responsive UI components. 
+                  Currently, at <span className="text-blue-400 font-medium">OneAssure</span>, I am driving end-to-end frontend implementations—building out full, pixel-perfect pages from Figma designs, flawlessly integrating APIs, and establishing crucial SEO functionality. 
+                  Driven by a strong academic foundation in Computer Science, I thrive on turning complex problems into beautifully engineered web experiences.
                 </p>
               </div>
 
