@@ -6,10 +6,10 @@ const Experience = () => {
       company: "OneAssure",
       role: "Frontend Developer Intern",
       tech: "Next.js",
-      period: "Feb 2026 - Present",
+      period: "Feb 2026 - May 2026",
       description:
         "Worked on integrating APIs, implementing SEO functions, and building full pages precisely based on provided Figma designs.",
-      isCurrent: true,
+      isCurrent: false,
     },
     {
       company: "Strica",
