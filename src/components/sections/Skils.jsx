@@ -28,6 +28,7 @@ import {
   SiOpenai,
   SiGooglegemini,
   SiClaude,
+  SiDiscord,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
@@ -70,9 +71,10 @@ const Skills = () => {
       name: "VS Code",
       icon: <VscVscode className="text-[oklch(0.55_0.13_243.48)]" />,
     },
-    { name: "Vercel", icon: <SiVercel className="text-white" /> },
-    { name: "Vite", icon: <SiVite className="text-purple-400" /> },
+    { name: "Vercel", icon: <SiVercel className="text-[#FFFFFF]" /> },
+    { name: "Vite", icon: <SiVite className="text-[#646CFF]" /> },
     { name: "n8n", icon: <SiN8N className="text-orange-400" /> },
+    { name: "Discord", icon: <SiDiscord className="text-[#5865F2]" /> },
   ];
 
   const aiTools = [
